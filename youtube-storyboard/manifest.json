@@ -1,0 +1,14 @@
+﻿{
+  "name": "Storyboard Preview for YouTube (BETA)",
+  "version": "1.0.1",
+  "description": "Shows YouTube video previews of related videos on mouse over.",
+ "manifest_version": 2,
+    "content_scripts": [
+    {
+      "matches": ["http://www.youtube.com/*","https://www.youtube.com/*"],
+      "js": ["jquery.js","storyboard.js"],
+	  "run_at" : "document_end"
+    }
+	
+  ]
+}
